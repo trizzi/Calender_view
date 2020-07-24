@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+.lead {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.navbar .calender-view {
+  display: flex;
+}
+
+.navbar i {
+  margin-top: 0.25rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar a {
+  color: #333;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #e6e6e6;
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: aqua;
+}
+
+.sidebar-hidden {
+  left: -200px;
+}
+
+.sidebar .active {
+  left: 0px;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar .lead {
+    display: none;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar a {
+    display: none;
+  }
+}

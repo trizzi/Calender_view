@@ -1,0 +1,4 @@
+.theme-button {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+  }
